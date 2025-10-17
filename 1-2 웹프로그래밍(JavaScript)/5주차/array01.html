@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>배열</h4>
+    
+    <hr>
+    <script>
+        let arr1=new Array();   //생성
+        arr1[0]='가';           //초기화
+        arr1[1]='나';
+        let arr2=[1,2,3,4];     //생성+초기화
+
+
+        for(let i=0; i<arr1.length; i++){
+            if(i==arr1.length-1){
+                document.write(arr1[i]);
+            }else{
+                document.write(arr1[i]+",");
+            }
+        }
+
+        document.write("<br>")
+        arr2[2]=8; //값 변경
+        arr2[6]=9; //값 추가(4,5자리는 undefined가 들어감)
+        for(let j=0; j<arr2.length; j++){
+            document.write(arr2[j]+" ");
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>parameter</h4>
+    <hr>
+    <script>
+    let id='b123';   //전역변수
+    function idpw(id){      //지역변수
+        let id2='a123';
+        if(id == id2){  //id 는 지역 a123
+            document.write("로그인 성공!");
+        }else{
+            document.write("아이디가 다릅니다. 다시 확인해주세요.")
+        }
+    }
+
+    idpw(id);   //b123
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;}
+        h4{
+            color:blue;}
+    </style>
+</head>
+<body>
+   <h4>word</h4>
+    <b><pre>
+        
+    </pre></b>
+    <hr>
+    <h3><span>찜질방에서 요금계산프로그램</span></h3>
+    <h2>성인 : 10000원,
+        어르신 : 65세이상 5000원, 아동 19세까지 : 3000원
+        성인수, 어르신 명수, 아동 명수를 입력받아 계산하시오.
+    </h2>
+        
+    <script>
+        let adult=0;
+        let parent=0;
+        let children=0;
+        let total=0;
+        let input=prompt("[동양불가마] 방문을 환영합니다.\n 성인/어르신/아동 중 입력>>");
+
+        
+        if(input=="성인"){
+            adult=prompt("[동양불가마]\n 성인>>");
+            total=adult*10000;
+        }else if(input == "어르신"){
+            parent=prompt("[동양불가마]\n 어르신>>");
+            total=parent*5000;
+        }else if(input=="아동"){
+            children=prompt("[동양불가마]\n 아동>>");
+            total=children*3000;
+        }else{
+            document.write("잘못입력하셨습니다.");
+        }
+        document.write("지불 금액은 : "+total+"원");
+    </script>
+</body>
+</html>

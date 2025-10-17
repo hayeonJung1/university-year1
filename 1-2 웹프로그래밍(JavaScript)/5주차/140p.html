@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>동양불가마 사우나</h4>
+    <p>성인 10,000원 <br>어르신 5,000원 <br>어린이 3,000원</p>
+    
+    <hr>
+    <script>
+        let adult, parent, children;
+        let total=0;
+
+        adult=prompt("[동양불가마사우나]\n 성인 인원수>>");
+        adult=Number(adult);
+        total+=adult*10000;
+
+        parent=prompt("[동양불가마사우나]\n 어르신 인원수>>");
+        parent=Number(parent);
+        total+=parent*5000;
+
+        children=prompt("[동양불가마사우나]\n 어린이 인원수>>");
+        children=Number(children);
+        total+=children*3000;
+        
+        document.write("총 지불 금액 : "+total);
+
+
+    </script>
+</body>
+</html>

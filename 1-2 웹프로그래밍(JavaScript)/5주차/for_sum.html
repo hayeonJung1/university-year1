@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>sum</h4>
+    <hr>
+    <script>
+        let sum =0;
+        /*for(let i=1; i<=10; i++){
+            sum+=i; //sum=sum+i
+        }
+        document.write("sum = "+sum)
+        */
+
+        //시험문제 예시
+        let su=prompt("숫자를 입력하세요>>");
+        su=Number(su);
+        for(let i=0; i<=su; i++){
+            sum+=i;
+        }
+        document.write("sum="+sum);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    span{
+        color: red;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <h4><span>변수, lenght, 이중따옴표, 외따옴표</span></h4>
+    <hr>
+    <script>
+        let word='I love you';
+        document.write("<br> word : "+word);
+
+        let length=word.length; //length는 속성 -> 공백까지 포함
+        document.write("<br> word's lenght : "+length);
+
+        //따옴표가 서로 맞아야됨.
+        word = "she's gone";
+        document.write("<br> word : "+word);
+
+        word = 'she said "goodbye"';
+        document.write("<br> word : "+word);
+    </script>
+</body>
+</html>

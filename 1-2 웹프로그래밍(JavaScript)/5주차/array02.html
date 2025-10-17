@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>배열 동적추가</h4>
+    <hr>
+    <script>
+        let arr=new Array();
+        arr.push('자바스크립트');   //뒤에추가
+        arr.push('C언어');
+        arr.push('Python');
+        
+        for(let i=0; i<arr.length; i++){
+            document.write(arr[i]+" ")
+        }
+
+        arr.pop();      //맨뒤삭제
+        document.write("<br>")
+
+
+
+
+        for(let i=0; i<arr.length; i++){
+            document.write(arr[i]+" ")
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>파라미터</h4>
+    <b><pre>
+
+    </pre></b>
+    
+    <hr>
+    <script>
+    function plus(a, b){
+        let result = a+b;   //a, b, result -> 지역변수(스택영역)
+        return result;      //return하면 return하고 메모리에서 사라짐
+    }
+    
+    //return값을 가져오기 때문에 호출만하면 안됨.
+    let result = plus(3,4); //데이터 영역의 변수, 전역변수
+    document.write(result+"<br>");
+
+    // 문제 : 빼기함수를 선언, 두 수를 비교해서 더 큰수에서 작은 수를 빼는 함수
+    function fun(su1, su2){
+        let result;
+        if(su1>su2){
+            result=su1-su2;
+            document.write(su1+"-"+su2+"="+result+"<br>");
+        }else if(su1<su2){
+            result=su2-su1;
+            document.write(su2+"-"+su1+"="+result+"<br>");
+        }else{
+            result=0;
+            document.write(result+"<br>");
+        }
+    }
+
+    fun(3,4);
+    fun(7, 4);
+    fun(4,4);
+        
+    </script>
+</body>
+</html>

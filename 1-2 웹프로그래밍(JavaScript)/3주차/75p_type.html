@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    span{
+        color: red;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        let a=1;
+        document.write("a : "+a+", type : "+typeof(a));
+
+        let b='kim';
+        document.write("<br>b : "+b+", type : "+typeof(b));
+
+        let data = null;    //의도적으로 값을 비우는 값
+        document.write("<br>data : "+data+", type : "+typeof(data));
+
+        let data1 = undefined;    //실수로 값을 비우는 값
+        document.write("<br>data : "+data1+", type : "+typeof(data1));
+
+        let result = data==data1;   //값을 비교
+        document.write("<br>"+result);
+
+        let result1 = data===data1; //값과 타입을 모두 비교
+        document.write("<br>"+result1);
+
+        document.write("<br>"+(data+data1)); //숫자가 아니다. NaN
+        document.write("<br>"+Boolean(a)+"\t"+typeof(Boolean(a)));  //강제형변환 -> number가 boolean으로 바뀜
+    </script>
+</body>
+</html>

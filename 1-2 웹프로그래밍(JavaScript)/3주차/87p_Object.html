@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    span{
+        color: red;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <h4><span>객체 생성</span></h4>
+    <hr>
+    <script>
+        //객체 생성1
+        let data={
+            name:'고길동',
+            addr: '구로구 고척동',
+            age:22};
+        
+        document.write("name : "+data.name);
+        document.write("<br>addr : "+data.addr);
+        document.write("<br>age : "+data.age);
+        
+        //객체 생성2
+        let person=new Object();
+        person={name: '불꽃남자',
+                comment: '포기를 모르는 남자',
+                age: 20
+        };
+        document.write("<br><br>name : "+person.name);
+        document.write("<br>comment : "+person.comment);
+        document.write("<br>age : "+person.age);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>break</h4>
+    <b><pre>
+        숫자 9일때 while 빠져나가는 프로그램
+    </pre></b>
+    <hr>
+    <script>
+        /*let num=0;
+        while(num!=9){
+            num=prompt("num>>");
+            document.write("num="+num+"<br>");
+        }*/
+        
+        //break문을 추가
+        while(true){
+            num=prompt("num>>");
+            document.write("num="+num+"<br>");
+            if(num == 9){
+                break;
+
+            }
+        }
+    </script>
+</body>
+</html>

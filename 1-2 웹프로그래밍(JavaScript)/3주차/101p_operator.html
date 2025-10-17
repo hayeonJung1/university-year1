@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    span{
+        color: red;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <h4><span>주제</span></h4>
+    <hr>
+    <script>
+        let a=1;
+        document.write("<br> a : "+a);
+        document.write("<br> a : "+ ++a);   //전위 증가
+        document.write("<br> a : "+a++);    //후위 증가
+        document.write("<br> a : "+a);
+
+
+        a=1;
+        b=2;
+        document.write("<br> a: "+a+", b : "+b);
+        result = a++ + b++;
+        document.write("<br> a: "+a+", b : "+b+", result : "+result);
+
+        a=1;
+        b=2;
+        document.write("<br> a: "+a+", b : "+b);
+        result = a++ + a++;
+        document.write("<br> a: "+a+", result : "+result);
+
+        
+    </script>
+</body>
+</html>

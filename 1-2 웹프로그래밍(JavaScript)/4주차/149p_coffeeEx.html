@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;}
+        h4{
+            color:blue;}
+    </style>
+</head>
+<body>
+   <h4>word</h4>
+    <b><pre>
+
+    </pre></b>
+    <hr>
+
+    <script>
+        let menu=prompt("1. 아메리카노\n2. 카페라떼\n3. 카푸치노\n4. 한방차");
+        menu=Number(menu);
+        switch(menu){
+            case 1:
+                document.write("아메리노는 1500원 입니다.");
+                break;
+            case 2:
+                document.write("카페라떼는 2000원 입니다.");
+                break;
+            case 3:
+                document.write("카푸치노는 3000원 입니다.");
+                break;
+            case 4:
+                document.write("한방차는 5000원 입니다.");
+                break;
+            default:
+                document.write("해당 메뉴는 없습니다.")
+        }
+    </script>
+</body>
+</html>

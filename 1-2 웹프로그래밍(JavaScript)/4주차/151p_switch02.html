@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;}
+        h4{
+            color:blue;}
+    </style>
+</head>
+<body>
+   <h4>word</h4>
+    <b><pre>
+
+    </pre></b>
+    <hr>
+
+    <script>
+        //계절판단 프로그램
+        let season=prompt("월을 입력하세요.");
+        season=Number(season);
+        switch(season){
+            case 2:
+            case 1:
+            case 12:
+                document.write("겨울 입니다.");
+                break;
+            case 11:
+            case 10:
+            case 9:
+                document.write("가을 입니다.");
+                break;
+            case 8:
+            case 7:
+            case 6:
+                document.write("여름 입니다.");
+                break;
+            case 5:
+            case 4:
+            case 3:
+                document.write("봄 입니다.")
+                break;
+            default:
+                document.write("잘못 입력하셨습니다. 월을 확인해주세요.")
+        }
+
+    </script>
+</body>
+</html>

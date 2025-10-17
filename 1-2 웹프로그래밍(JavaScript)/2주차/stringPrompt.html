@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        prompt로 입력 받으면 string으로 저장됨
+        형변환 방법 2가지 -> 시험문제 나옴
+        age=parseInt(age);
+        age=Number(age);
+    </pre>
+    <script>
+        // prompt로 입력 받으면 string으로 저장됨
+        let age=prompt("age>>>");
+        //형변환 방법 2가지 -> 시험문제 나옴
+        age=parseInt(age);
+        age=Number(age);
+        if(age>=20)
+            document.write("성인입니다.");
+        else
+            document.write("다음기회에 오세요.");
+    document.write("<br>age의 자료형 : "+typeof(age));
+    </script>
+</body>
+</html>

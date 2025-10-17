@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;}
+        h4{
+            color:blue;}
+    </style>
+</head>
+<body>
+   <h4>word</h4>
+    <b><pre>
+
+    </pre></b>
+    <hr>
+
+    <script>
+        let jumsu=prompt("점수를 입력하세요.>>");
+        jumsu=Number(jumsu);
+        jumsu=jumsu/10;
+        switch(jumsu){
+            case 10:
+            case 9:
+                document.write("장학생");
+                break;
+            case 8:
+                document.write("우등생");
+                break;
+            case 7:
+            case 6:
+            case 5:
+            case 4:
+            case 3:
+            case 2:
+            case 1:
+            case 0:
+                document.write("다음 기회에 도전하세요.")
+            default:
+                document.write("잘못 입력하셨습니다. 점수를 확인해주세요.")
+        }
+
+    </script>
+</body>
+</html>
