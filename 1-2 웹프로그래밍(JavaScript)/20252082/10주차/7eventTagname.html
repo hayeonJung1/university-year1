@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h4{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+   <h4>Tag name</h4>
+
+    <hr>
+    <script>
+        function change(){
+            //span 태그를 모두 가져와서 fuits에 넣음
+            let fruits=document.getElementsByTagName("span");
+            // fruits가 무수히 많을 수 있으니 for문으로 돌림
+            for(let i=0; i<fruits.length; i++){
+                fruits[i].style.border="2px dotted red";
+                fruits[i].style.padding="4px";
+                fruits[i].style.color="red";
+                fruits[i].style.fontFamily="궁서체";
+                fruits[i].style.fontSize="30px";
+            }
+        }
+    </script>
+    <h3>내가 좋아하는 과일</h3>
+    <!--button을 클릭하면 change() 호출-->
+    <button onclick="change()">눌러봐</button><hr>
+    나는 좋아하는 과일로는 <span>딸기</span>를 너무 좋아하고
+    그리고 <span>사과</span>도 엄청 좋아하며 <span>감</span>을 제일 좋아해요.
+</body>
+</html>

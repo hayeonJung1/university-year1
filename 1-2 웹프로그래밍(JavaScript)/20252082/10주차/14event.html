@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body onload="init()">
+   <h4>익명함수</h4>
+    
+    <hr>
+    <script>
+        // 잊어라... 다음에 기회가 되면 다시하기로
+        function init(){
+            let p = document.getElementById("p");
+            //익명함수
+            p.onmouseover=function(){
+                p.style.backgroundColor="skyblue";
+            }
+            p.onmouseout=function(){
+                p.style.backgroundColor="yellow";
+            }
+        }
+        /*
+        function over(){
+            p.style.backgroundColor="skyblue";
+        }
+        function out(){
+            p.style.backgroundColor="yellow";
+        }*/
+        
+    </script>
+    <h3>addEventListener</h3>
+    <p id="p">마우스를 올려보세요.</p>
+</body>
+</html>

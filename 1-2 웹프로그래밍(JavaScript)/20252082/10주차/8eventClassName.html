@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h4{
+            color:blue;
+        }
+        div, p{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+   <h4>Tag name</h4>
+
+    <hr>
+    <script>
+        function change(){
+            //span 태그를 모두 가져와서 fuits에 넣음
+            let fruits=document.getElementsByClassName("c");
+            // fruits가 무수히 많을 수 있으니 for문으로 돌림
+            for(let i=0; i<fruits.length; i++){
+                fruits[i].style.border="2px dashed blue";
+                fruits[i].style.padding="4px";
+                fruits[i].style.color="blue";
+                fruits[i].style.fontFamily="궁서체";
+                fruits[i].style.fontSize="20px";
+            }
+        }
+    </script>
+    <h3>내가 좋아하는 장소</h3>
+    <!--button을 클릭하면 change() 호출-->
+    <button onclick="change()">눌러봐</button><hr>
+    나는 좋아하는 장소는 <span class="c">파주</span>를 너무 좋아하고
+    그리고 <p class="c">제주도</p>도 엄청 좋아하며 <div class="c">로마</div>를 제일 좋아해요.
+</body>
+</html>

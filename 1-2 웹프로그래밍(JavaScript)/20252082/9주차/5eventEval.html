@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>evalFunction</h4>
+    <b><pre>
+
+    </pre></b>
+    
+    <hr>
+    <script>
+        function cal(){
+            let exp=document.getElementById("exp");
+            let result=document.getElementById("result");
+            // exp의 value를 result에 넣어라
+            result.value=eval(exp.value);
+        }
+        
+    </script>
+    <form>
+        exp : <input type="text" id="exp" value="">
+        <!--버튼을 클릭하면 cal()함수 호출-->
+        <input type="button" value="OK" onclick="cal()"><br>
+        result : <input type="text" id="result" value="">
+    </form>
+</body>
+</html>

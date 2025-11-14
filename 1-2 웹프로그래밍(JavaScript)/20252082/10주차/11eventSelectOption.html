@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body onload="changImg()">
+   <h4></h4>
+
+    <hr>
+    <script>
+        function changImg(){
+            let sel=document.getElementById("sel"); //select
+            let img=document.getElementById("img"); //img
+            // select안의 값은 배열안에 저장되어 있어서
+            img.src=sel.options[sel.selectedIndex].value;
+        }
+        
+    </script>
+    <h3>이미지 크기출력</h3>
+    <form>
+        <!--name은 서버로 넘어가는 이름, id는 스크립트-->
+        <select name="select" id="sel" onclick="changImg()">
+            <!--value-->
+            <option value="이미지1.jpg">골댕이</option>
+            <option value="이미지2.jpg">시바</option>
+            <option value="이미지3.jpg">푸들</option>
+        </select>
+        <span>이미지</span>
+    </form>
+    <img id="img" src="이미지1.jpg" alt="이미지가 있습니다." width="300" height="200">
+</body>
+</html>

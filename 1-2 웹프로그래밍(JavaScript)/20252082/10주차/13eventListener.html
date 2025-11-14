@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body onload="init()">
+   <h4>addEventListener</h4>
+
+    <hr>
+    <script>
+        function init(){
+            let p = document.getElementById("p");
+            // 시험문제 : p태그의 이벤트를 이벤트리스너함수에 등록하는 명령문을 쓰시오.
+            // 함수에 ()를 작성하지 않음
+            p.addEventListener("mouseover",over);
+            p.addEventListener("mouseout",out);
+        }
+        function over(){
+            p.style.backgroundColor="skyblue";
+        }
+        function out(){
+            p.style.backgroundColor="yellow";
+        }
+        
+    </script>
+    <h3>addEventListener</h3>
+    <p id="p">마우스를 올려보세요.</p>
+</body>
+</html>

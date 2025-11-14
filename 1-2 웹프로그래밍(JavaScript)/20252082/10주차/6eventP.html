@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        b{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>이벤트 처리 복습</h4>
+    <hr>
+    <script>
+        function change(){
+            let myspan=document.getElementById("myspan");
+            myspan.style.backgroundColor="pink";
+            myspan.style.color="red";
+            myspan.style.fontSize="30px";
+            myspan.style.border="2px solid green";
+            myspan.innerHTML="까꿍";
+        }
+        function change2(obj){
+            obj.innerHTML="<img src='이미지1.jpg'>";
+        }
+        
+    </script>
+    <h1 onclick="change2(this)">event 리스너</h1>
+    <p >나는 <span id="myspan" onmouseover="change()"
+        onmouseout="change2(this)">변신하는 로봇</span>이다.</p>
+</body>
+</html>

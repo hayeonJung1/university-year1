@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            color:blue;
+        }
+    </style>
+</head>
+<body onload="init()"> <!--초기함수 보통 inti()으로 설정함-->
+   <h4>이벤트 : onmouseFunction</h4>
+   <p>
+    2를 function을 사용
+   </p>
+   <hr>
+
+    <script>
+        function init(){
+            let img = document.getElementById("img");
+            let p = document.getElementById("p");
+        }
+        function over1(){
+            img.src="이미지2.jpg";
+        }
+        function out1(){
+            img.src="이미지1.jpg";
+        }
+        function over2(){
+            p.style.backgroundColor="yellow";
+            p.innerHTML="퐁냥퐁냥 인절미";
+            p.style.color="gray";
+        }
+        function out2(){
+            p.style.backgroundColor="pink";
+            p.innerHTML="보들보들 리트리버";
+            p.style.color="gray";
+        }
+        //파라미터가 있을 경우
+        function over3(a){
+            //let p = document.getElementById("p");
+            a.style.backgroundColor="red";
+        }
+        function out3(a){
+            //let p = document.getElementById("p");
+            a.style.backgroundColor="blue";
+        }
+    </script>
+    <img id="img" src="이미지1.jpg" alt="" onmouseover="over1()" onmouseout="out1()">
+    <p id="p" onmouseover="over2()" onmouseout="out2()">우리나라대한민국</p>
+    <p onmouseover="over3(this)" onmouseout="out3(this)">우리나라대한민국</p>
+</body>
+</html>

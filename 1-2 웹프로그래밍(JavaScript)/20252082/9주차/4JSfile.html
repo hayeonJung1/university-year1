@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            color:blue;
+        }
+    </style>
+    <!--jsfile 연결-->
+    <script src="4js.js"></script>
+</head>
+<body onload="init()"> <!--초기함수 보통 inti()으로 설정함-->
+   <h4>js파일 연결</h4>
+   <p>
+    head에 script에 src로 연결
+   </p>
+   <hr>
+    <img id="img" src="이미지1.jpg" alt="" onmouseover="over1()" onmouseout="out1()">
+    <p id="p" onmouseover="over2()" onmouseout="out2()">우리나라대한민국</p>
+    <p onmouseover="over3(this)" onmouseout="out3(this)">우리나라대한민국</p>
+</body>
+</html>

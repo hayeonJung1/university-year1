@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+   <h4>이벤트 : id선택자</h4>
+    <p>
+        event : id선택자<br>
+        getElementById()<br>
+        onclick : 클릭했을 때
+    </p>
+    <hr>
+    <script>
+        //함수
+        function change(){
+            let p=document.getElementById("a");
+            a.style.backgroundColor="orange";
+            a.innerHTML="귀여운 인절미다."
+        }
+    </script>
+
+    <!--onclick : 클릭했을 때 change() 함수 호출-->
+    <p id="a" onclick="change()">나는 강아지</p>
+    <img id="img" src="이미지1.jpg" alt="">
+</body>
+</html>

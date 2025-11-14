@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>radio</h4>
+
+    <hr>
+    <script>
+        function choice(){
+            //input의 radio에 name이 city를 가져옴
+            let city=document.getElementsByName("city");
+            for(let i=1; i<city.length;i++){
+                // city가 check 되어 있으면 경고창에 출력
+                if(city[i].checked==true){
+                    alert(city[i].value+"지역 선택완료!")
+                }
+            }
+        }
+    </script>
+    <h3>도시 선택</h3>
+    <form>
+        <input type="radio" name="city" value="seoul" checked>서울
+        <input type="radio" name="city" value="inchun">인천
+        <input type="radio" name="city" value="busan">부산
+        <input type="radio" name="city" value="danjin">당진
+        <input type="button" value="선택" onclick="choice()">
+    </form>
+</body>
+</html>

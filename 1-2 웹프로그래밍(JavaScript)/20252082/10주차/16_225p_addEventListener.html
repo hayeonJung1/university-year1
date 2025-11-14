@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+   <h4></h4>
+    <hr>
+    <input type="button" id="btnclick" value="click">
+    <script>
+        function second(event){
+            alert("두 번째 메세지");
+            document.write("x좌표 : "+event.x+"<br>");
+            document.write("y좌표 : "+event.y);
+        }
+        btnclick.addEventListener('click',second);
+    </script>
+</body>
+</html>
