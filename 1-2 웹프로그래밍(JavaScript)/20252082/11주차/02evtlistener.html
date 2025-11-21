@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>이벤트 리스너</h4>
+    <hr>
+    <input type="button" id="btnclk" value="버튼">
+    <script>
+        function first(){
+            document.write("첫 번째 메세지");
+        }
+        btnclk.addEventListener('click', first);
+        btnclk.addEventListener('click', function(){
+            document.write("두 번째 메세지");
+        });
+        btnclk.removeEventListener('click', first);
+        // 시험문제 : 호출결과는?
+    </script>
+</body>
+</html>

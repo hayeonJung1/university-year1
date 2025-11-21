@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;      }
+            h4{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+   <h4>class</h4>
+    <b><pre>
+
+    </pre></b>
+    
+    <hr>
+    
+    <input type="button" id="btnclk" value="버튼">
+    <div id="result"></div>
+    <script>
+        class Mouse{
+            handleEvent(event){
+                switch(event.type){
+                    case 'mouseover':
+                        result.innerHTML="마우스 버튼 올라감<img src='이미지1.jpg'>";
+                        break;
+                    case 'mouseout':
+                        result.innerHTML="마우스 버튼 놓음";
+                        break;
+                }
+            }
+        }
+        let mouse = new Mouse();
+        btnclk.addEventListener('mouseover', mouse);
+        btnclk.addEventListener('mouseout', mouse);
+        // 시험문제 : 클래스 선언 후 addEventListener등록시 클래스명으로 적용하시오.
+    </script>
+</body>
+</html>

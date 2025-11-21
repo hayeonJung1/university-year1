@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+   <h4>addEventListener</h4>
+    <hr>
+    <input type="button" id="btnclick" value="버튼">
+    <script>
+        function msg(event){
+            document.write(event.type+"<br>");
+            document.write("x좌표 : "+event.clientX+"<br>");
+            document.write("y좌표 : "+event.clientY);
+        }
+        btnclick.addEventListener('mouseover',msg);
+        // 시험문제 : 다음 밑줄에 msg()함수를 이벤트 리스너에 등록하시오.
+    </script>
+</body>
+</html>

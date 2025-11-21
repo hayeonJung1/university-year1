@@ -15,12 +15,20 @@
     </style>
 </head>
 <body>
-   <h4>word</h4>
-
+   <h4>이벤트 리스너 우선순위</h4>
     <hr>
+    <input type="button" id="bntclk" value="버튼" onclick=first()>
     <script>
+        function first(){
+            alert("내가 짱 메세지");
+        }
 
-        
+        // 이벤트 핸들러를 등록한다.
+        bntclk.onclick=function(){
+            alert("우선 적용 메세지");
+        }
+        btnclk.onclick=first();
+        // 시험문자 -> 출력의 결과는?
     </script>
 </body>
 </html>
