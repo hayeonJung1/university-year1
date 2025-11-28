@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+   <h4>화살표 함수 =></h4>
+    <pre>
+        function plus1(){
+            return 10;
+        }
+        //화살표 함수
+        plus2=()=>{
+            return 20;
+        }
+        document.write(plus1());
+        document.write(plus2());
+
+
+
+        function minus1(a, b){
+            return a-b;
+        }
+        //화살표 함수
+        minus2=(a, b)=>{
+            return a-b;
+        }
+        document.write(minus1(10, 5));
+        document.write(minus2(20, 10));
+    </pre>
+    <h4>문제 : 함수 plus를 화살표함수로 변경하시오.</h4>
+    <hr>
+    <script>
+        function plus1(){
+            return 10;
+        }
+        //화살표 함수
+        plus2=()=>{
+            return 20;
+        }
+        document.write(plus1()+"<br>");
+        document.write(plus2()+"<br>");
+
+
+
+        function minus1(a, b){
+            return a-b;
+        }
+        //화살표 함수
+        minus2=(a, b)=>{
+            return a-b;
+        }
+        document.write(minus1(10, 5)+"<br>");
+        document.write(minus2(20, 10)+"<br>");
+        
+    </script>
+</body>
+</html>

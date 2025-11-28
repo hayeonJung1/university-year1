@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+   <h4>단축프로퍼티</h4>
+    <pre>
+        객체의 프로퍼티 값 할당시 값도 같은 변수명이면 생략 가능
+        let id="bts";
+        let pw="1234";
+
+        const singer={
+            id:id,
+            pw:pw
+        }
+        document.write(`<br>singer.id=${singer.id}`);
+        document.write(`<br>singer.pw=${singer.pw}`);
+
+
+        const singer1={
+            //단축프로퍼티
+            id,
+            pw
+        }
+        document.write(`<br>singer1.id=${singer1.id}`);
+        document.write(`<br>singer1.pw=${singer1.pw}`);
+    </pre>
+    <h4>문제 : singer객체의 프로퍼티를 단축프로퍼티로 객체를 생성하시오.</h4>
+    <hr>
+    <script>
+        let id="bts";
+        let pw="1234";
+
+        const singer={
+            id:id,
+            pw:pw
+        }
+        document.write(`<br>singer.id=${singer.id}`);
+        document.write(`<br>singer.pw=${singer.pw}`);
+
+
+        const singer1={
+            //단축프로퍼티
+            id,
+            pw
+        }
+        document.write(`<br>singer1.id=${singer1.id}`);
+        document.write(`<br>singer1.pw=${singer1.pw}`);
+        
+    </script>
+</body>
+</html>

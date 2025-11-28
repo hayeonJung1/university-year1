@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+   <h4>Object</h4>
+    <p>
+        객체 생성 방법 2가지,<br>
+        프로퍼티 추가
+    </p>
+    <pre>
+        /객체생성 1
+        let dic1 = new Object();
+        dic1.boy="소년";
+        document.write(`dic2.boy = ${dic1.boy}`);
+
+        //객체생성 2
+        let dic2 = {
+            boy:"땅콩",
+            girl:"오징어",
+            friend:300
+        }
+        document.write(`dic2.boy = ${dic2.boy}`);
+
+        //프로퍼티 추가
+        dic2.apple="사과";
+        document.write(`dic2.apple = ${dic2.apple}`);
+
+        //프로퍼티 삭제
+        delete dic2.boy;
+        document.write(`dic2.boy = ${dic2.boy}`);   //undefined
+    </pre>
+    <h4>문제 : boy프로퍼티를 갖는 객체object를 생성하시오.</h4>
+    <h4>문제 : 객체 object에 apple프로퍼티를 추가하시오.</h4>
+    <h4>문제 : 객체 object에 apple프로퍼티를 삭제하시오.</h4>
+    <hr>
+    <script>
+        //객체생성 1
+        let dic1 = new Object();
+        dic1.boy="소년";
+        dic1.girl="소녀";
+        dic1.friend="친구";
+
+        document.write(`dic2.boy = ${dic1.boy}`);
+        document.write(`<br>dic2.girl = ${dic1.girl}`);
+        document.write(`<br>dic2.friend = ${dic1.friend}`);
+
+        //객체생성 2
+        let dic2 = {
+            boy:"땅콩",
+            girl:"오징어",
+            friend:300
+        }
+        document.write(`<br>dic2.boy = ${dic2.boy}`);
+        document.write(`<br>dic2.girl = ${dic2.girl}`);
+        document.write(`<br>dic2.friend = ${dic2.friend}`);
+
+        //프로퍼티 추가
+        dic2.apple="사과";
+        document.write(`<br>dic2.apple = ${dic2.apple}`);
+
+        //프로퍼티 삭제
+        delete dic2.boy;
+        document.write(`<br>dic2.boy = ${dic2.boy}`);   //undefined
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+   <h4>템플릿 문자열</h4>
+    <p>
+        ` ${변수}`
+    </p>
+    <pre>
+        const name="leesunshin";
+        const age=53;
+        document.write("name : "+name+", age : "+age);
+        
+        // ES6문법 템플릿 문자열
+        document.write(`name : ${name},  age : ${age}`);    //답
+        //document.write(`name : ${name} "\n"  age : ${age}`); -> \n은 사용 안됨 br만 가능!!
+    </pre>
+    <hr>
+    <h4>시험문제 : 템플릿 문자열을 이용하여 위의 변수를 출력하시오.</h4>
+    <script>
+        const name="leesunshin";
+        const age=53;
+        document.write("name : "+name+", age : "+age);
+        
+        // ES6문법 템플릿 문자열
+        document.write(`<br>name : ${name},  age : ${age}`);    //답
+        //document.write(`<br>name : ${name} "\n"  age : ${age}`); -> \n은 사용 안됨 <br>만 가능!!
+
+    </script>
+</body>
+</html>

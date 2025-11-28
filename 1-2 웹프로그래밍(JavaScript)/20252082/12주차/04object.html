@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+   <h4>object</h4>
+    <p>
+        객체를 선언할 때 let 보다는 const 상수 객체형태로 주로 사용<br>
+        객체같은 참조를 const로 사용하면 주소를 의미함<br>
+        변수는 값을 의미하고
+    </p>
+    <hr>
+    <script>
+        const dic={
+            boy:"bts"
+        }
+        // dic={}; -> 재선언 오류
+
+        document.write(`dic.boy : ${dic.boy}<br>`);
+        //프로퍼티 값 변경
+        dic.boy="2ne1";
+        document.write(`dic.boy : ${dic.boy}<br>`);
+    </script>
+</body>
+</html>

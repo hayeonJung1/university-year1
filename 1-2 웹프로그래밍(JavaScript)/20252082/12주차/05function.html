@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h4{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+   <h4>function</h4>
+    <pre>
+        const unit={
+            boy:"bts",
+            //객체 안의 함수선언
+            attack:function(weapon){
+                return `${weapon}으로 공격한다.`;
+            }
+        }
+        let reader = unit.attack("주먹");   //함수 호출
+        document.write(reader);
+        reader = unit.attack("총");
+        document.write(reader);
+    </pre>
+    <hr>
+    <h4>문제 : unit객체에 attack함수가 있게 객체를 생성하시오.</h4>
+    <script>
+        const unit={
+            boy:"bts",
+            //객체 안의 함수선언
+            attack:function(weapon){
+                return `${weapon}으로 공격한다.<br>`;
+            }
+        }
+        let reader = unit.attack("주먹");   // 함수호출
+        document.write(reader);
+        reader = unit.attack("총");
+        document.write(reader);
+    </script>
+</body>
+</html>
